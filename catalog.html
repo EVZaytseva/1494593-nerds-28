@@ -27,27 +27,43 @@
     
         <main>
           <section>
-            <h2>Выбор шаблона:</h2>
-            <p>СТОИМОСТЬ:</p>
-            <!--Тут видимо будет форма. Пока так оставила.
-              Не понимаю, как это оформить-->
+            <h2 class="visually-hidden">Выбор шаблона:</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              
+              <fieldset>
+              <legend>СТОИМОСТЬ:</legend>
+              </fieldset>
           
-            <p>СЕТКА:</p>
+              <fieldset>
+              <legend>СЕТКА:</legend>
               <ul>
-                <li><span>Адаптивная</span></li>
-                <li><span>Фиксированная</span></li>
-                <li><span>Резиновая</span></li>
+                <li><input type="radio" name="net" value="adaptive" id="filter-adaptive" checked>
+                    <label for="filter-adaptive">Адаптивная</label></li>
+                <li><input type="radio" name="net" value="fixed" id="filter-fixed">
+                    <label for="filter-fixed">Фиксированная</label></li>
+                <li><input type="radio" name="net" value="elastic" id="filter-elastic">
+                    <label for="filter-elastic">Резиновая</label></li>
               </ul>
+            </fieldset>
             
-            <p>ОСОБЕННОСТИ:</p>
+            <fieldset>
+            <legend>ОСОБЕННОСТИ:</legend>
                 <ul>
-                  <li><span>Слайдер</span></li>
-                  <li><span>Блок преимуществ</span></li>
-                  <li><span>Новости</span></li>
-                  <li><span>Галерея</span></li>
-                  <li><span>Корзина</span></li>
+                  <li><input type="checkbox" name="slider" id="filter-slider" checked>
+                      <label for="filter-slider">Слайдер</label></li>
+                  <li><input type="checkbox" name="benefits-block" id="filter-benefits-block">
+                    <label for="filter-benefits-block">Блок преимуществ</label></li>
+                  <li><input type="checkbox" name="news" id="filter-news" checked> 
+                    <label for="filter-news">Новости</label></li>
+                  <li><input type="checkbox" name="gallery" id="filter-gallery">
+                    <label for="filter-gallery">Галерея</label></li>
+                  <li><input type="checkbox" name="cart" id="filter-cart">
+                    <label for="filter-cart">Корзина</label></li>
                 </ul>
-                <button type="button">Показать</button>
+              </fieldset>
+               
+              <button type="button">Показать</button>
+              </form>
             </section>
             
           <section>
@@ -71,34 +87,61 @@
                 <img src="img/img-sedona.jpg" width="360" height="580" alt="Седона - информационный сайт для туристов.">
               </a>
             </figure>
+            
+            <p><b>Sedona</b><br>
+            Информационный сайт для туристов</p>
+            <button type="button">9900 &#8381</button>
+            
             <figure>
               <a href="#">
                 <img src="img/img-pink.jpg" width="350" height="578" alt="Pink app - продуктовый лендинг приложения для iOS и Android.">
               </a>
             </figure>
-            <figure>
+            
+            <p><b>Pink app</b><br>
+              Продуктовый лендинг приложения для iOS и Android</p>
+              <button type="button">9900 &#8381</button>
+            
+              <figure>
               <a href="#">
                 <img src="img/img-barbershop.png" width="358" height="578" alt="Барбершоп - сайт салона красоты для мужчин.">
               </a>
             </figure>
-            <figure>
+            
+            <p><b>Barbershop</b><br>
+              Сайт салона красоты для мужчин</p>
+              <button type="button">9900 &#8381</button>
+            
+              <figure>
               <a href="#">
-                <img src="img/img-mishka.png" width="358" height="578" alt="Мишка - интернет магазин вязаных игрушек.">
+                <img src="img/img-mishka.png" width="358" height="578" alt="Мишка - интернет-магазин вязаных игрушек.">
               </a>
             </figure>
-            <figure>
+
+            <p><b>Mishka</b><br>
+              Интернет-магазин вязаных игрушек</p>
+              <button type="button">9900 &#8381</button>
+            
+              <figure>
               <a href="#">
                   <img src="img/img-aplus.png" width="358" height="578" alt="APlus - лендинг курсов повышения квалификации.">
               </a>
             </figure>
+            
+            <p><b>A Plus</b><br>
+              Лендинг курсов повышения квалификации</p>
+              <button type="button">9900 &#8381</button>
+
             <figure>
               <a href="#">
                 <img src="img/img-kvast.png" width="358" height="578" alt="Кваст - промо-сайт производителей крафтового кваса.">
               </a>
             </figure>
-            <!--Оксана, необходимо ли здесь копировать маски из фигмы, 
-              которые идут в паре к этим картинкам (серые контуры к ним) 
-              или эти контуры добавляются к картинка каким-то другим путем?-->
+
+            <p><b>Кваст</b><br>
+              Промо-сайт производителей крафтового кваса</p>
+              <button type="button">9900 &#8381</button>
+           
             <ul>
               <li>
                 <a href="#">1</a>
@@ -120,7 +163,28 @@
             <p><b>NЁRDS DESIGN STUDIO</b></p>
             <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
             <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
+            <button type="button">Напишите нам</batton>
+              <!--Я наверное не правильно оформила кнопку для вызова попапа. Оксана, укажите, пожалуйста, как оформляются такие кнопки-->
             <img src="img/map.png" width="1440" height="416" alt="Карта с указанием местонахождения дизайн-студии Нёрдс."></img>
+          </section>
+         
+          <section>
+            <h2>Напишите нам</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label for="appointment-name">Ваше имя:</label>
+                <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label for="appointment-email">Ваш email:</label>
+                <input id="appointment-email" type="text" name="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="appointment-text">Текст письма:</label>
+                <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+              </p>
+              <button type="submit">Отправить</button>
+            </form>
           </section>
 
         </main>   
