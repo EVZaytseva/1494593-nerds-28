@@ -1,0 +1,69 @@
+
+:root {
+    --basic-white: #FFFFFF
+    --basic-font-black: #000000
+    --basic-extra-light-gray: #EEEEEE 
+    --basic-light-gray: #DFDFDF
+    --basic-gray: #D5D5D5
+    --basic-font-gray:#283136
+    --basic-dark-gray: #4D4D4D
+    --basic-coral: #FB565A
+    --basic-coral-dark:#E74246
+    --basic-coral-extra-dark:#D7373B
+    --button-green: #00CA74
+    --button-green-dark:#00BC6C
+    --button-green-extra-dark:#00AA62
+    --button-mustard: #EFC849
+    --button-mustard-dark:#EAB534
+    --button-mustard-extra-dark:#E5A722
+}
+
+body {
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-font-gray);
+    background-color: var(--basic-white);
+    background-position: top center;
+}
+
+a {
+    text-decoration: none;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-navigation,
+.cart-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-font-black);
+    background-color: var(--basic-extra-light-gray);
+}
+
+.main-navigation-wrapper {
+    background-color: var(--basic-extra-light-gray); 
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a:hover,
+.cart-navigation a:hover  {
+    color: var(--basic-coral);
+}
+
+.site-navigation a:focus,
+.cart-navigation a:focus {
+    color: var(--basic-extra-light-gray);
+}
+
