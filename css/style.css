@@ -41,6 +41,9 @@ img {
     height: auto;
 }
 
+/*.header-logo:focus {
+    
+}*/
 
 .main-navigation a,
 .cart-navigation a {
@@ -49,6 +52,8 @@ img {
     text-transform: uppercase;
     color: var(--basic-font-black);
     background-color: var(--basic-extra-light-gray);
+    display: inline-block;
+    padding-bottom: 13px;
 }
 
 .cart-navigation img{
@@ -73,10 +78,9 @@ img {
     color: var(--basic-font-light-gray);
 }
 
-.site-navigation .active a {
+.site-navigation .active {
     color: var(--basic-font-black);
     border-bottom: 2px solid var(--basic-coral);
-    padding-bottom: 13px;
 }
 
 .features-list {
@@ -95,13 +99,65 @@ img {
     color: var(--basic-font-black);
   }
 
-.feature-button1 {
-    display: inline-block;
-    width: 160;
-    height: 50;
-    margin: 0 5px;
-    padding: 6px 15px;
-    background-color: var(--basic-coral);
-    border: none;
-    border-radius: 3px;
+.btn {
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block;
+  max-width: 260px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--basic-coral);}
+
+ .btn:focus {
+    color: rgba(255,255,255,0.3);
+  }
+
+  .slider-btn {
+    width: 240px;
+    padding: 17px 56px 15px 52px; 
+  }
+
+
+  .feature-btn {
+    width: 160px;
+    padding: 17px 40px 15px 39px;
 }
+
+.feature-btn-coral:hover {
+    background-color: var(--basic-coral-dark);
+}
+
+.feature-btn-coral:focus {
+    background-color: var(--basic-coral-extra-dark);
+}
+
+.feature-btn-green {
+    background-color: var(--button-green);
+}
+
+.feature-btn-green:hover {
+    background-color: var(--button-green-dark);
+}
+
+.feature-btn-green:focus {
+    background-color: var(--button-green-extra-dark);
+}
+
+.feature-btn-mustard {
+    background-color: var(--button-mustard);
+}
+
+.feature-btn-mustard:hover {
+    background-color: var(--button-mustard-dark);
+}
+.feature-btn-mustard:focus {
+    background-color: var(--button-mustard-extra-dark);
+}
+
