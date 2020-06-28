@@ -84,6 +84,14 @@ img {
     border-bottom: 2px solid var(--basic-coral);
 }
 
+.slider-title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--basic-font-black);
+    margin-bottom: 25px;
+}
+
 .features-list {
     list-style: none;
 }
@@ -98,6 +106,7 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     color: var(--basic-font-black);
+    margin-bottom: 16px;
   }
 
 .btn {
@@ -114,7 +123,8 @@ img {
   font-weight: 500;
   border: none;
   border-radius: 3px;
-  background-color: var(--basic-coral);}
+  background-color: var(--basic-coral);
+}
 
  .btn:focus {
     color: rgba(255,255,255,0.3);
@@ -126,6 +136,13 @@ img {
     padding-bottom: 15px; 
   }
 
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 
   .feature-btn {
     width: 160px;
@@ -162,6 +179,23 @@ img {
 }
 .feature-btn-mustard:focus {
     background-color: var(--button-mustard-extra-dark);
+}
+
+.about-design-studio-title1 {
+font-weight: 500;
+font-size: 45px;
+line-height: 45px;
+color: var(--basic-font-black);
+margin-bottom: 32px;
+}
+
+.about-design-studio-text {
+    margin-bottom: 40px;
+}
+
+.about-design-studio-title2 {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
