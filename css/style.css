@@ -12,6 +12,8 @@
     --basic-coral: #FB565A;
     --basic-coral-dark:#E74246;
     --basic-coral-extra-dark:#D7373B;
+    --border-icon-hover-coral: (0deg, #E74246, #E74246);
+    --border-icon-hover-coral-dark: (0deg, #D7373B, #D7373B);
     --button-green: #00CA74;
     --button-green-dark:#00BC6C;
     --button-green-extra-dark:#00AA62;
@@ -223,12 +225,48 @@ margin-bottom: 32px;
     background-color: var(--basic-coral);
 }
 
+.about-us-in-numbers {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about-us-in-numbers span {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+}
+
+.about-us-in-numbers sup {
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.about-us-in-numbers ul {
+    list-style: none;
+}
+
+.our-clients ul {
+    list-style: none;
+}
+
+.our-clients img {
+    opacity: 0.2;
+}
+
+.our-clients img:hover {
+    opacity: 1;
+    }
+    
+.our-clients img:active {
+    opacity: 0.1;
+    }
+
 .footer-social ul {
     list-style: none;
 }
 
 .footer-social a {
-    display: inline-block;
+    display: flex;
     width: 81px;
     height: 81px;
     border-radius: 50%;
@@ -242,3 +280,27 @@ margin-bottom: 32px;
     align-items: center; 
 }
 
+.footer-social a:hover {
+    display: flex;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    background-color:  var(--basic-coral);
+    border: -1px solid var(--border-icon-hover-coral);
+    
+}
+
+.footer-social a:active {
+    display: flex;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    background-color:  var(--basic-coral-extra-dark);
+    border: -1px solid var(--border-icon-hover-coral-dark);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social-icon img:hover {
+    fill: var(--border-icon-hover-coral-dark);
+    opacity: 0.3;
+} 
